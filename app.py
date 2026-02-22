@@ -12,7 +12,7 @@ app = Flask(__name__)
 MODEL_PATH = "Mobile_Net_Fine_Tuned_v3.keras"
 
 print("Loading model...")
-model = tf.keras.models.load_model(MODEL_PATH)
+model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 print("Model loaded successfully!")
 
 # Home Route
